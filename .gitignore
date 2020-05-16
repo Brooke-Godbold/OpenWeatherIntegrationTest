@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/TestResults
+/OpenWeatherApiTests/bin/Debug
+/OpenWeatherApiTests/obj/Debug
+/packages
