@@ -43,6 +43,12 @@ cd OpenWeatherApiTests
 
 There are further improvements which could be made to this Test Suite. Given the time, I would look to investigate the HTML Report functionality, which I was not able to get involved in due to time considerations. I would also seek to make improvements to how the User API Key is stored, to make it more secure, and also make improvements to how the Test Data is stored and retrieved, to make it more intuitive for non-technical Users.
 
+## About The Tests
+
+For the requested User Journeys, the Automation Tasks requested I felt were not Tests in the correct sense; they both felt more like Feature Implementation rather than Test Implementation.
+
+Therefore, my Tests are testing those features in the best way possible; To Test getting the Hottest Day, I Assert that the Temperature for each day is not empty. To Test getting the Minimum and Maximum Temperature, I Assert that the Temperature over each hour is not empty. Actually Implementing that functionality would be a requirement of the upstream Service which was consuming that Data.
+
 ## Further Questions
 
 Q. How long did you spend on the technical test?
@@ -57,6 +63,7 @@ Q. Please describe yourself using JSON
 
 A.
 
+```json
 {
 	"firstName": "Brooke",
 	"lastName": "Godbold",
@@ -86,3 +93,4 @@ A.
 		}
 	]
 }
+```
