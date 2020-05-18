@@ -8,15 +8,12 @@ namespace OpenWeatherApiTests
 {
     class TestDataUtils
     {
-        //private static string apiKeyName = "API_KEY";
-
         public static string baseUrl = "https://api.openweathermap.org";
         public static string oneCallApi = "/data/2.5/onecall?";
 
         public static string getApiKey()
         {
             return Properties.Settings.Default.API_KEY.ToString();
-            //return Environment.GetEnvironmentVariable(apiKeyName).ToString();
         }
 
         public static string getCityLatitude(string city)
