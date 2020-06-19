@@ -1,16 +1,4 @@
-# Ziglu - Automation Test
-
-Create a backend automation framework using the following API:
- Open Weather API - https://openweathermap.org
-(You will need to create an account on OpenWeatherApi as this will give you an API key to be able to conduct the tests)
-
-If you have any questions throughout don’t hesitate to ask.
-
-## The user journeys to automate
-
-1. Using the Open Weather API, get the weather forecast for the week for 5 different cities. Then get the hottest day for each city (in this forecast window) - think of how to present this data, which formats are understandable.
-
-2. The next scenario is to get the minimum and maximum temperature in the city of Paris
+# Open Weather Automation Test
 
 ## Test & Environment Setup
 
@@ -37,60 +25,4 @@ For running via the Command Line:
 ```bash
 cd OpenWeatherApiTests
 ./runtests.cmd
-```
-
-## Looking Forward
-
-There are further improvements which could be made to this Test Suite. Given the time, I would look to investigate the HTML Report functionality, which I was not able to get involved in due to time considerations. I would also seek to make improvements to how the User API Key is stored, to make it more secure, and also make improvements to how the Test Data is stored and retrieved, to make it more intuitive for non-technical Users.
-
-## About The Tests
-
-For the requested User Journeys, the Automation Tasks requested I felt were not Tests in the correct sense; they both felt more like Feature Implementation rather than Test Implementation.
-
-Therefore, my Tests are testing those features in the best way possible; To Test getting the Hottest Day, I Assert that the Temperature for each day is not empty. To Test getting the Minimum and Maximum Temperature, I Assert that the Temperature over each hour is not empty. Actually Implementing that functionality would be a requirement of the upstream Service which was consuming that Data.
-
-## Further Questions
-
-Q. How long did you spend on the technical test?
-
-A. I spent around 6 hours on this Project. This included getting the Environment set up (done from a machine which hasn't seen much C# Programming'), investigating concepts which I had never tackled in C# before (making Rest Calls, manipulating Json, running Assertions, getting SpecFlow set up), and of course designing the Tests themselves.
-
-Q. What do you think is the most interesting trend in test automation?
-
-A. The trends which I have noticed have been more focused around Front-End Automation. I was particularly impressed with how powerful a tool Cypress was when I had the chance to use it, having come off of the back of Selenium and Protractor.
-
-Q. Please describe yourself using JSON
-
-A.
-
-```json
-{
-	"firstName": "Brooke",
-	"lastName": "Godbold",
-	"dateOfBirth": "29/11/1991",
-	"address": {
-		"houseNumber": "14",
-		"streetName": "BelgraviaClose",
-		"city": "Barnet",
-		"postCode": "EN55XA"
-	},
-	"hobbies": [
-		{
-			"name": "Foreign Languages",
-			"averageTimePerWeek": 5
-		},
-		{
-			"name": "Unity Game Development",
-			"averageTimePerWeek": 8
-		},
-		{
-			"name": "Gym & Fitness",
-			"averageTimePerWeek": 6
-		}
-		{
-			"name": "Retro Game Collecting",
-			"averageTimePerWeek": 3
-		}
-	]
-}
 ```
